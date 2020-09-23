@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="#" />
     <title>Beat App</title>
   </head>
   <body>
@@ -21,9 +22,9 @@
             <i class="fa fa-microphone-slash" aria-hidden="true"></i>
           </button>
           <select name="kick-select" id="kick-select">
-            <option value="./sounds/kick-classic.wav">Classic Kick</option>
-            <option value="./sounds/kick-808.wav">808 Kick</option>
-            <option value="./sounds/kick-oldschool.wav">Oldschool Kick</option>
+            <option value="./sounds/kick-classic.mp4">Classic Kick</option>
+            <option value="./sounds/kick-808.mp4">808 Kick</option>
+            <option value="./sounds/kick-oldschool.mp4">Oldschool Kick</option>
           </select>
         </div>
         <div class="kick">
@@ -44,9 +45,9 @@
             <i class="fa fa-microphone-slash" aria-hidden="true"></i>
           </button>
           <select name="snare-select" id="snare-select">
-            <option value="./sounds/snare-block.wav">Block Snare</option>
-            <option value="./sounds/snare-808.wav">808 Snare</option>
-            <option value="./sounds/snare-vinyl01.wav">Snare Vinyl</option>
+            <option value="./sounds/snare-block.mp4">Block Snare</option>
+            <option value="./sounds/snare-808.mp4">808 Snare</option>
+            <option value="./sounds/snare-vinyl01.mp4">Snare Vinyl</option>
           </select>
         </div>
         <div class="snare">
@@ -67,9 +68,9 @@
             <i class="fa fa-microphone-slash" aria-hidden="true"></i>
           </button>
           <select name="clap-select" id="clap-select">
-            <option value="./sounds/clap-crushed.wav">Crushed Clap</option>
-            <option value="./sounds/clap-808.wav">808 Clap</option>
-            <option value="./sounds/clap-slapper.wav">Slapper Clap</option>
+            <option value="./sounds/clap-crushed.mp4">Crushed Clap</option>
+            <option value="./sounds/clap-808.mp4">808 Clap</option>
+            <option value="./sounds/clap-slapper.mp4">Slapper Clap</option>
           </select>
         </div>
         <div class="clap">
@@ -83,11 +84,21 @@
           <div class="pad clap-pad b7"></div>
         </div>
       </div>
+      <button class="play">Play</button>
+      <div class="tempo">
+        <input
+          type="range"
+          class="tempo-slider"
+          max="300"
+          min="20"
+          value="150"
+        />
+        <p>Tempo: <span class="tempo-nr">150</span></p>
+      </div>
     </div>
-    <button class="play"></button>
-    <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
-    <audio class="snare-sound" src="./sounds/snare-808.wav"></audio>
-    <audio class="clap-sound" src="./sounds/clap-slapper.wav"></audio>
+    <audio class="kick-sound" src="./sounds/kick-classic.mp4"></audio>
+    <audio class="snare-sound" src="./sounds/snare-808.mp4"></audio>
+    <audio class="clap-sound" src="./sounds/clap-slapper.mp4"></audio>
 
     <script src="./app.js"></script>
   </body>
